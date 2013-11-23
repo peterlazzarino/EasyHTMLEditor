@@ -4,6 +4,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+#site-display img{
+    max-width:100%;
+}
+
+#site-display td, tr{
+    border: 1px solid #333;
+}
+
 .helper-box a{
     font-size:13px;
     height:20px;
@@ -58,7 +66,7 @@ h1 .italic{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor:pointer;
-    font-weight:bold;
+    font: 300 15px/1 'Roboto', Helvetica, sans-serif;
 }
 
 #side-spacer{
