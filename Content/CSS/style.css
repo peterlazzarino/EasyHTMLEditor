@@ -1,0 +1,167 @@
+body{
+    margin:0px;
+    background-image : url(../Images/grid.png);
+    font-family: 'Roboto', sans-serif;
+}
+
+.helper-box a{
+    font-size:13px;
+    height:20px;
+    padding:2px 5px;
+    text-decoration: none;
+    font-weight:bold;
+    color:black;
+}
+
+h1{
+    font: 300 45px/1 'Roboto', Helvetica, sans-serif;
+}
+
+h1 .italic{
+    color:#00A0B0;
+}
+
+.italic{
+    font-style:italic;
+}
+
+#main{
+    width:100%;
+    height:900px;
+    min-width:1000px;
+    max-width:1500px;
+    margin:auto auto 50px;
+    position:relative;
+}
+
+.header{
+    height:60px;
+    position:relative
+}
+
+.blue-splitter{
+    background: #00A0B0;
+}
+
+.blue-splitter{
+    color: white;
+}
+
+#submit{
+    width:150px;
+    position:absolute;
+    left:50%;
+    margin-left:-75px;
+    border:0px;
+    height:30px;
+    bottom:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#side-spacer{
+    width:10px;
+    height:100%;
+    float:left;
+}
+
+.helper-box{
+    background:#efefef;
+    width:auto;
+    min-height: 80px;
+    padding:5px 10px;
+}
+
+.helper-box h3{
+    margin-top:0px;
+}
+
+#editor-area{
+    height:800px;
+    overflow: hidden;
+}
+
+#editor-area .side{
+    height:calc(100% - 90px);
+    width: calc(50% - 5px);
+    float:left;
+}
+
+.side-by-side, .CodeMirror{
+    display:inline;
+    float:left;
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+.element-helper{
+    color:black;
+    background-color: #d2d2d2;
+}
+
+#element-helpers{
+    line-height: 1.57em;
+}
+
+#site-display{
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    overflow: auto;
+    padding:5px;
+}
+
+#footer{
+    height:20px;
+    width:90%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin:auto;
+    padding:7px 15px;
+    font-size:12px;
+}
+
+#footer .left{
+    float:left;
+}
+
+#footer .right{
+    float:right;
+}
+
+.CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+
+
+/* Background color for background select buttons */
+
+#red{
+    background:red;
+}
+
+#blue{
+    background:blue;
+    color:white;
+}
+
+#green{
+    background:green;
+}
+
+#hotpink{
+    background:hotpink;
+}
+
+#khaki{
+    background:khaki;
+}
+
+#white{
+    background:white;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easy HTML Editor</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link href="Content/CSS/codemirror.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/CSS/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/CSS/style.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic' rel='stylesheet' type='text/css'>
+    <script src="Content/Scripts/codemirror.js" type="application/javascript"></script>
+    <script src="Content/Scripts/htmlmixed.js" type="application/javascript"></script>
+    <script src="Content/Scripts/javascript.js" type="application/javascript"></script>
+    <script src="Content/Scripts/css.js" type="application/javascript"></script>
+    <script src="Content/Scripts/xml.js" type="application/javascript"></script>
+    <script src="Content/Scripts/vbscript.js" type="application/javascript"></script>
+    <script src="Content/Scripts/site.js" type="application/javascript"></script>
+    <style>
+    </style>
+    <script>
+        var siteEditor = [];
+        $(function(){
+            var codeMirrorArea = document.getElementById("editor");
+            var displayFrame = document.getElementById("site-display");
+            siteEditor = new EasyEditor(codeMirrorArea, displayFrame);
+        });
+
+        $(window).load(function(){
+            $(".element-helper").tooltip()
+        });
+    </script>
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <h1>Easy <span class="italic">HTML</span> Editor</h1>
+        <button id="submit" class="blue-splitter">Generate Page</button>
+    </div>
+<div id="editor-area">
+    <div class="left side">
+        <div id="html-helpers" class="helper-box">
+            <h3>Add an element to your page</h3>
+            <div id="element-helpers">
+            <a href="#" class="element-helper" title="The span tag is used to add inline text to a document." id="span">Span</a>
+            <a href="#" class="element-helper" title="The UL tag is used to add a bulleted list to a document." id="ul">Unordered List</a>
+            <a href="#" class="element-helper" title="The OL tag is used to add a numbered list to a document." id="ol">Ordered List</a>
+            <a href="#" class="element-helper" title="The P tag is used to add a paragraph to a document." id="p">Paragraph</a>
+            <a href="#" class="element-helper" title="The H1 tag is used to add a the most important heading to a document." id="h1">Heading 1</a>
+            <a href="#" class="element-helper" title="The H2 tag is used to add a the 2nd most important heading to a document." id="h2">Heading 2</a>
+            <a href="#" class="element-helper" title="The H3 tag is used to add a the 3rd most important heading to a document." id="h3">Heading 3</a>
+            <a href="#" class="element-helper" title="The HR tag is used to add a break to a document that divides content." id="hr">Horizontal Rule</a>
+            <a href="#" class="element-helper" title="The IMG tag displays image content on the web site." id="img">Image</a>
+        </div>
+        </div>
+        <textarea id="editor"></textarea>
+    </div>
+    <div id="side-spacer" class="blue-splitter">&nbsp;</div>
+    <div class="right side">
+        <div id="style-helpers" class="helper-box">
+            <h3>Choose a background color</h3>
+            <a href="#" class="background-color" id="red">Red</a>
+            <a href="#" class="background-color" id="blue">Blue</a>
+            <a href="#" class="background-color" id="green">Green</a>
+            <a href="#" class="background-color" id="khaki">Yellow</a>
+            <a href="#" class="background-color" id="hotpink">Pink</a>
+            <a href="#" class="background-color" id="white">White</a>
+        </div>
+        <div class="side-by-side">
+            <div id="site-display">
+                <h1>This is Easy HTML Editor</h1>
+                <h3>A learning tool that will allow you to build a simple website while learning HTML.</h3>
+                <hr/>
+                <p>To Begin, edit the HTML to the left and click Generate Page or add some HTML elements using the buttons above the editor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="footer" class="blue-splitter">
+        <span class="left">Have a feedback or an issue to report? Send me an <a href="mailto:medulla@me.com?Subject=Easy%20HTML%20Editor">email</a>. Source available on <a href="">GitHub</a></span>
+        <span class="right">2013 - Peter Lazzarino</span>
+    </div>
+</div>
+</body>
+</html>
