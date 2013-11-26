@@ -7,6 +7,7 @@ var EasyEditor = function (editor, display) {
     this.bindSubmit();
     this.bindAddElement();
     this.createEditor();
+    this.bindFullScreen();
     this.setDisplayBackgroundColor("white");
 };
 
@@ -66,6 +67,18 @@ EasyEditor.prototype = {
         $(".element-helper").click(function () {
             var elType = $(this).attr("id");
             ez.addElement(elType);
+        });
+    },
+
+    bindFullScreen: function () {
+        $("#full-screen").click(function(){
+            $("#site-display").toggleClass("full-screen");
+            if($("#site-display").hasClass("full-screen")){
+                $("#full-screen").addClass("full-screen-close").html("Close Full Screen");
+            }
+            else{
+                $("#full-screen").removeClass("full-screen-close").html("View in Full Screen <img src='Content/Images/fullscreen_alt.png'/>");
+            }
         });
     },
 

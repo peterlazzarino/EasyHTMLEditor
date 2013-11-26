@@ -4,6 +4,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    color:black;
+    font-size:13px;
+}
+
 #site-display img{
     max-width:100%;
 }
@@ -12,13 +17,33 @@ body{
     border: 1px solid #333;
 }
 
+.full-screen{
+    position:fixed !important;
+    left:0px;
+    height:100%;
+    z-index:10;
+    padding-top:0px !important;
+}
+
+.full-screen-close{
+    position:fixed;
+    top:10px;
+    right:20px;
+    font-size:18px;
+    z-index:30;
+    text-decoration: underline !important;
+    color:red;
+}
+
 .helper-box a{
-    font-size:13px;
     height:20px;
     padding:2px 5px;
     text-decoration: none;
     font-weight:bold;
-    color:black;
+}
+
+#full-screen{
+    float:right;
 }
 
 h1{
@@ -97,6 +122,11 @@ h1 .italic{
     float:left;
 }
 
+#full-screen img{
+    height: 9px;
+    margin-left: 4px;
+}
+
 .side-by-side, .CodeMirror{
     display:inline;
     float:left;
@@ -116,12 +146,10 @@ h1 .italic{
 
 #site-display{
     display: block;
-    position:absolute;
-    height:auto;
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
+    width:100%;
+    position: absolute;
+    top:0px;
+    bottom:0px;
     overflow: auto;
     padding:5px;
 }
