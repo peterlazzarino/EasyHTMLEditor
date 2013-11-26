@@ -4,6 +4,21 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+#css-area{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+button{
+    cursor:pointer;
+}
+
 #site-display img{
     max-width:100%;
 }
@@ -65,7 +80,6 @@ h1 .italic{
     bottom:0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    cursor:pointer;
     font: 300 15px/1 'Roboto', Helvetica, sans-serif;
 }
 
@@ -92,15 +106,16 @@ h1 .italic{
 }
 
 #editor-area .side{
-    height:calc(100% - 90px);
+    height:calc(100%);
     width: calc(50% - 5px);
     float:left;
+    position: relative;
 }
 
 .side-by-side, .CodeMirror{
     display:inline;
     float:left;
-    height:100%;
+    height:calc(100% - 90px);
     width:100%;
     position:relative;
 }
@@ -124,6 +139,45 @@ h1 .italic{
     right:0;
     overflow: auto;
     padding:5px;
+}
+
+#styles{
+    width:calc(100% - 9px);
+    max-width:calc(100% - 9px);
+    min-height:150px;
+    max-height:300px;
+    position:relative;
+    margin:2px 2px -1px 2px;
+    border: 0px;
+}
+
+#style-editor{
+    float:left;
+    width:100%;
+}
+
+.css-shown{
+    bottom:0px !important;
+}
+
+#css-area{
+    position:absolute;
+    width:100%;
+    height:auto;
+    bottom: -157px;
+    background:#b2b2b2;
+}
+
+#show-styles{
+    position: absolute;
+    top: -33px;
+    left: -2px;
+    padding: 9px 27px;
+    margin: 0px;
+    background: #b2b2b2;
+    border-top-right-radius: 10px;
+    border: none;
+    font: 300 15px/1 'Roboto', Helvetica, sans-serif;
 }
 
 #footer{

@@ -6,6 +6,7 @@ var EasyEditor = function (editor, display) {
     this.bindBackgroundColor();
     this.bindSubmit();
     this.bindAddElement();
+    this.bindStyleButton();
     this.createEditor();
     this.setDisplayBackgroundColor("white");
 };
@@ -66,6 +67,16 @@ EasyEditor.prototype = {
         $(".element-helper").click(function () {
             var elType = $(this).attr("id");
             ez.addElement(elType);
+        });
+    },
+
+    bindStyleButton: function(){
+        $("#show-styles").click(function(){
+            if($("#css-area").hasClass("css-shown")){
+                $("#css-area").removeClass("css-shown")
+                return;
+            }
+            $("#css-area").addClass("css-shown")
         });
     },
 
