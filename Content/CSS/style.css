@@ -31,8 +31,7 @@ a{
     right:20px;
     font-size:18px;
     z-index:30;
-    text-decoration: underline !important;
-    color:red;
+    color:black;
 }
 
 .helper-box a{

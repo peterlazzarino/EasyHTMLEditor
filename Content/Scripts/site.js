@@ -74,7 +74,7 @@ EasyEditor.prototype = {
         $("#full-screen").click(function(){
             $("#site-display").toggleClass("full-screen");
             if($("#site-display").hasClass("full-screen")){
-                $("#full-screen").addClass("full-screen-close").html("Close Full Screen");
+                $("#full-screen").addClass("full-screen-close").html("Close Full Screen - X");
             }
             else{
                 $("#full-screen").removeClass("full-screen-close").html("View in Full Screen <img src='Content/Images/fullscreen_alt.png'/>");
